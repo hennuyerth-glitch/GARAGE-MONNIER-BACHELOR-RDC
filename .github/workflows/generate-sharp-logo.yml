@@ -1,0 +1,37 @@
+name: Générer le logo haute définition
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'logo.svg'
+      - '.github/workflows/generate-sharp-logo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  logo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Générer une version PNG nette du logo
+        run: |
+          mkdir -p /tmp/logo
+          convert -background none logo.svg -resize 1600x -density 300 /tmp/logo/monnier-assistance.png
+          convert /tmp/logo/monnier-assistance.png -quality 95 monnier-assistance.webp
+
+      - name: Publier le logo
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add monnier-assistance.webp
+          if git diff --cached --quiet; then
+            echo 'Logo déjà à jour.'
+            exit 0
+          fi
+          git commit -m 'Logo Monnier haute définition'
+          git push
