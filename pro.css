@@ -1,0 +1,47 @@
+:root{--blue:#20252a;--blue2:#121518;--yellow:#e7b64b;--ink:#1c2024;--muted:#6b6f73;--soft:#f4f1ea;--line:#ddd7cb;--paper:#fffdf8}
+
+/* Finition premium — header, logo et hiérarchie visuelle */
+body{background:var(--paper);color:var(--ink)}
+.container{width:min(1180px,92%)}
+.site-header{background:rgba(255,253,248,.96);border-bottom:1px solid #d8d1c5;box-shadow:0 4px 18px rgba(18,21,24,.06)}
+.nav-wrap{min-height:78px;gap:34px}
+.brand{display:flex;align-items:center;min-width:220px;height:58px}
+.site-logo{width:225px!important;height:58px!important;object-fit:contain;object-position:left center;display:block;filter:none}
+.nav{gap:18px;font-size:12px;white-space:nowrap}
+.nav a{transition:color .18s ease,background .18s ease,transform .18s ease}
+.nav a:not(.nav-phone):not(.nav-reservation){padding:8px 2px}
+.nav a:not(.nav-phone):not(.nav-reservation):hover{color:#b88625;transform:translateY(-1px)}
+.nav-reservation{padding:12px 17px!important;background:#e7b64b!important;color:#17191c!important;border-radius:3px!important;box-shadow:0 5px 14px rgba(231,182,75,.22)}
+.nav-phone{padding:12px 17px!important;background:#20252a!important;border-radius:3px!important;letter-spacing:.01em}
+
+.hero{padding:76px 0 70px;background:linear-gradient(120deg,#15191c 0%,#24292d 58%,#171b1e 100%)}
+.hero-grid{grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);gap:70px}
+h1{font-size:clamp(42px,4.6vw,64px);max-width:780px;letter-spacing:-.048em}
+.hero-lead{font-size:17px;line-height:1.65;max-width:700px}
+.actions{gap:10px}.btn{border-radius:3px;min-height:48px;display:inline-flex;align-items:center;justify-content:center}
+.hero-side{padding:22px 0 22px 28px}.hero-side p{line-height:1.75}
+
+.quick-grid>div{padding:18px 15px}.quick-icon{border-radius:3px}
+.section{padding:82px 0}.section-head{margin-bottom:34px}
+.service-grid,.engagement-grid{gap:18px}.service-card,.engagement-card{border-radius:5px}
+.service-card{min-height:220px;padding:28px}.service-card:hover{transform:translateY(-3px);box-shadow:0 16px 35px rgba(32,37,42,.08)}
+.service-card-dark{background:linear-gradient(135deg,#20252a,#15191c)}
+.engagement-card.featured{box-shadow:0 14px 30px rgba(18,21,24,.16)}
+.territory-card{border-radius:5px}.ev-card{border-radius:5px}
+.address-card{border-radius:5px}
+
+/* Galerie plus éditoriale et moins massive */
+.gallery-section{padding-top:74px;padding-bottom:78px}
+.gallery-head{margin-bottom:28px}.gallery-grid{grid-template-columns:1.35fr .825fr .825fr;grid-template-rows:205px 205px;gap:12px}
+.gallery-item{border-radius:5px}.gallery-caption{left:10px;bottom:10px;border-radius:3px;padding:7px 9px}
+.gallery-logo{opacity:.9}.gallery-logo .site-logo{width:200px!important;height:auto!important}
+
+/* Réservation */
+.reservation-card{border-radius:5px}.reservation-btn{border-radius:3px}
+
+/* Footer / urgence */
+.emergency-banner{padding:48px 0;background:linear-gradient(120deg,#121518,#20252a)}
+
+@media(max-width:1050px){.nav-wrap{gap:18px}.site-logo{width:205px!important}.nav{gap:12px}.nav-phone,.nav-reservation{padding-left:12px!important;padding-right:12px!important}.hero-grid{gap:48px}}
+@media(max-width:900px){.nav-wrap{min-height:72px}.brand{height:52px}.site-logo{width:195px!important;height:52px!important}.hero{padding:62px 0 58px}}
+@media(max-width:700px){.container{width:min(94%,560px)}.nav-wrap{justify-content:center}.brand{min-width:0}.site-logo{width:190px!important;height:52px!important}.hero{padding:52px 0}.hero h1{font-size:clamp(38px,10vw,52px)}.section{padding:64px 0}.gallery-grid{gap:10px}}
