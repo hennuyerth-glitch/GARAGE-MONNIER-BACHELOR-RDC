@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
 <title id="title">Garage Monnier — L'Épine</title>
-<desc id="desc">Logo horizontal minimaliste du Garage Monnier avec référence à L'Épine et à l'île de Noirmoutier.</desc>
-<rect x="18" y="18" width="1164" height="384" rx="18" fill="#fff" stroke="#003b70" stroke-width="8"/>
+<desc id="desc">Logo horizontal minimaliste du Garage Monnier, L'Épine, avec une référence graphique discrète à l'île de Noirmoutier.</desc>
+<rect x="18" y="18" width="1164" height="384" rx="18" fill="#ffffff" stroke="#003b70" stroke-width="7"/>
 <g fill="#003b70" font-family="Montserrat,Arial,sans-serif" text-anchor="middle">
-  <text x="600" y="90" font-size="38" font-weight="700" letter-spacing="15">GARAGE</text>
-  <text x="600" y="210" font-size="112" font-weight="800" letter-spacing="1">MONNIER</text>
-  <text x="600" y="275" font-size="30" font-weight="700" letter-spacing="9">L'ÉPINE</text>
+  <text x="600" y="88" font-size="34" font-weight="700" letter-spacing="14">GARAGE</text>
+  <text x="600" y="205" font-size="108" font-weight="800" letter-spacing="2">MONNIER</text>
+  <text x="600" y="268" font-size="29" font-weight="700" letter-spacing="9">L'ÉPINE</text>
 </g>
-<path d="M558 125 L588 125 L570 158 L594 158 L558 207 L568 171 L545 171 Z" fill="#f4c400"/>
+<rect x="626" y="119" width="9" height="82" rx="4.5" fill="#f4c400"/>
 <g fill="none" stroke="#003b70" stroke-width="5" stroke-linecap="round">
-  <path d="M170 300 H470"/>
-  <path d="M730 300 H1030"/>
+  <path d="M170 302 H465"/>
+  <path d="M735 302 H1030"/>
 </g>
-<g transform="translate(535 292)">
-  <path d="M48 5 C29 14 31 35 45 51 C55 63 51 79 59 94 C67 108 83 113 89 128 C96 143 86 157 94 171 C102 185 120 190 127 204 C134 218 125 231 133 245 C139 257 153 263 162 275 L181 260 C170 248 161 239 164 226 C168 211 181 200 178 184 C174 167 157 158 155 143 C152 125 166 112 160 96 C155 81 138 74 133 59 C128 44 141 32 129 19 C116 6 98 11 84 5 Z" fill="#003b70"/>
-  <circle cx="59" cy="27" r="8" fill="#f4c400" stroke="none"/>
-  <path d="M154 79 C203 62 244 66 286 84" stroke="#2c8fc4"/>
-  <path d="M160 96 C211 81 251 85 298 103" stroke="#2c8fc4"/>
-  <path d="M166 113 C216 99 258 105 307 122" stroke="#2c8fc4"/>
+<g transform="translate(540 289)">
+  <path d="M64 5 C45 13 40 30 48 46 C54 58 57 70 53 84 C49 100 58 112 72 121 C86 130 91 142 87 157 C83 172 89 185 103 193 C118 202 126 214 124 228 C122 240 113 251 121 263 C128 273 141 279 154 286 L177 268 C166 257 158 247 160 236 C162 222 174 211 170 196 C166 181 150 173 149 158 C148 143 160 132 158 117 C156 101 143 93 136 80 C130 68 137 55 131 43 C124 29 108 26 99 15 C91 5 78 1 64 5 Z" fill="#003b70"/>
+  <circle cx="60" cy="29" r="8" fill="#f4c400"/>
+  <path d="M154 84 C202 69 244 73 285 89" stroke="#2c8fc4"/>
+  <path d="M160 101 C211 87 252 91 297 108" stroke="#2c8fc4"/>
+  <path d="M166 118 C216 104 258 110 306 127" stroke="#2c8fc4"/>
 </g>
 </svg>
