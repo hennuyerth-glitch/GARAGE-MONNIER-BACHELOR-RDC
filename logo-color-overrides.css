@@ -1,0 +1,14 @@
+:root{--blue:#092f55;--blue2:#061f3a;--yellow:#efb63d;--ink:#17212b;--muted:#66717b;--soft:#eef1f3;--line:#d5d9dd;--white:#fff}
+.site-logo{width:250px!important;height:78px!important;display:block;object-fit:contain;object-position:left center}
+.brand{display:flex!important;align-items:center;min-width:250px;height:78px}
+.brand .brand-main,.brand .brand-sub{display:none!important}
+.site-header{background:#fff!important;border-bottom:3px solid var(--yellow)!important}
+.nav a:hover{color:#092f55!important}.nav-phone{background:#092f55!important}.nav-reservation{background:#efb63d!important;color:#17212b!important}
+.hero{background:linear-gradient(120deg,#061f3a,#092f55)!important}
+.quick-icon{background:#092f55!important}.quick-emergency .quick-icon{background:#efb63d!important}
+.service-card-dark{background:#092f55!important;border-color:#092f55!important}.section-grey{background:#eef1f3!important}.territory-card{background:#061f3a!important}
+.ev-card{background:#e8edf1!important;border-left-color:#efb63d!important}.ev-icon{background:#092f55!important}.emergency-banner{background:#061f3a!important}.address-card{border-top-color:#efb63d!important}
+.btn-yellow{background:#efb63d!important}.btn-blue{background:#092f55!important}.timeline{border-left-color:#092f55!important}.timeline>div:before{background:#efb63d!important}
+.value-pills span,.rental-tags span{color:#092f55!important}.engagement-card.featured{background:#092f55!important;border-color:#092f55!important}.featured .engagement-number{color:#efb63d!important}
+.gallery-section{background:#eef1f3!important}.gallery-caption{background:rgba(6,31,58,.9)!important}
+@media(max-width:700px){.site-logo{width:190px!important;height:66px!important}.brand{min-width:190px;height:66px}}
