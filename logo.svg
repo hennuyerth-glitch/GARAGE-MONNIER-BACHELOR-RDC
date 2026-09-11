@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+<title id="title">Garage Monnier — L'Épine</title>
+<desc id="desc">Logo minimaliste du Garage Monnier avec l'île de Noirmoutier et des vagues.</desc>
+<rect width="1200" height="420" fill="#fff"/>
+<g fill="#003b70">
+  <text x="600" y="82" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="42" letter-spacing="18">GARAGE</text>
+  <text x="600" y="210" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="104" font-weight="800" letter-spacing="3">MONN</text>
+  <text x="870" y="210" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="104" font-weight="800">ER</text>
+  <text x="600" y="285" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="34" letter-spacing="10">L'ÉPINE</text>
+</g>
+<path d="M775 122 L820 122 L782 174 L820 174 L758 238 L775 184 L742 184 Z" fill="#f4c400"/>
+<g fill="none" stroke="#003b70" stroke-width="4">
+ <line x1="265" y1="275" x2="470" y2="275"/><line x1="730" y1="275" x2="935" y2="275"/>
+</g>
+<g transform="translate(540 300)">
+ <path d="M42 3 C22 12 25 32 39 47 C49 58 45 76 54 90 C62 103 78 107 84 121 C90 136 80 151 88 165 C96 179 115 183 122 198 C129 212 120 225 128 239 C134 250 148 256 156 268 L177 254 C166 243 157 233 160 220 C164 205 178 194 175 179 C171 161 153 154 151 139 C148 121 163 108 157 92 C152 78 134 71 129 57 C124 42 137 30 125 17 C112 3 94 8 79 2 Z" fill="#003b70"/>
+ <circle cx="53" cy="24" r="7" fill="#f4c400" stroke="none"/>
+ <path d="M145 74 C196 56 235 60 274 80" stroke="#2c8fc4"/>
+ <path d="M151 91 C204 75 242 80 286 100" stroke="#2c8fc4"/>
+ <path d="M158 108 C207 94 249 101 295 119" stroke="#2c8fc4"/>
+</g>
+</svg>
