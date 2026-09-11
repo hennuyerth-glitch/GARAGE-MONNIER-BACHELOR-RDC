@@ -10,6 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.reservation-section{background:#f4f7fa;border-top:1px solid #dce4eb;border-bottom:1px solid #dce4eb}
+.reservation-box{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.reservation-card{background:#fff;border:1px solid #dce4eb;border-radius:9px;padding:26px;box-shadow:0 10px 30px rgba(0,30,60,.07)}
+.reservation-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}
+.reservation-list span{background:#f4f7fa;border-left:3px solid #003b70;padding:10px 12px;font-size:13px;font-weight:700}
+.reservation-card .btn{margin-top:8px}
+@media(max-width:820px){.reservation-box{grid-template-columns:1fr}.reservation-list{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -22,6 +31,7 @@
       <a href="#services">Services</a>
       <a href="#histoire">Notre histoire</a>
       <a href="#engagements">Engagements</a>
+      <a href="#reservation">Réservation</a>
       <a href="#horaires">Horaires</a>
       <a href="#contact">Contact</a>
       <a class="nav-phone" href="tel:+33251393068">02 51 39 30 68</a>
@@ -85,6 +95,32 @@
       <article class="service-card"><span>04</span><h3>Vente de véhicules</h3><p>Véhicules Renault et multimarques, neufs et d'occasion selon les disponibilités et vos besoins.</p></article>
       <article class="service-card"><span>05</span><h3>Location courte durée</h3><p>Solutions de mobilité selon disponibilité : citadines, Captur, hybride, minibus 9 places et remorques.</p></article>
       <article class="service-card service-card-dark"><span>06</span><h3>Monnier Assistance</h3><p>Remorquage auto et moto, dépannage sur place, treuillage, roue ou boîte bloquée, désensablage et désenvasage.</p><a href="tel:+33613271985">Appeler le 06 13 27 19 85 →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="reservation" class="section reservation-section">
+  <div class="container reservation-box">
+    <div>
+      <p class="eyebrow blue">RÉSERVATION</p>
+      <h2>Besoin d'un rendez-vous ?</h2>
+      <p class="muted">Préparez votre demande directement depuis le site : entretien, réparation, véhicule électrique, pare-brise, location ou vente. Le Garage Monnier vous confirme ensuite le créneau.</p>
+      <div class="reservation-list">
+        <span>Entretien / révision</span>
+        <span>Réparation / diagnostic</span>
+        <span>Électrique / hybride</span>
+        <span>Pare-brise</span>
+        <span>Location courte durée</span>
+        <span>Vente de véhicule</span>
+      </div>
+      <button class="btn btn-yellow" type="button" onclick="openReservation()">Réserver un rendez-vous</button>
+    </div>
+    <div class="reservation-card">
+      <p class="eyebrow blue">COMMENT ÇA MARCHE ?</p>
+      <h3>Une demande simple, une confirmation par le garage.</h3>
+      <p class="muted">Indiquez votre prestation, votre date souhaitée, vos coordonnées et votre véhicule. L'équipe pourra ensuite confirmer la disponibilité.</p>
+      <a class="btn btn-blue" href="tel:+33251393068">02 51 39 30 68</a>
+      <p class="muted" style="font-size:12px;margin-top:12px">Pour une panne ou une urgence : <strong>06 13 27 19 85</strong>, assistance 24h/24 · 7j/7.</p>
     </div>
   </div>
 </section>
@@ -237,6 +273,6 @@
     <span>L'Épine · Île de Noirmoutier</span>
   </div>
 </footer>
-<script src="script.js"></script>
+<script src="script.js?v=20260911"></script>
 </body>
 </html>
