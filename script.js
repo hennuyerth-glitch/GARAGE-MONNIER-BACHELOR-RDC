@@ -23,7 +23,10 @@ const reservationStyles = `
 .time-hint{font-size:11px;color:#647587;margin-top:6px}.reservation-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
 .reservation-btn{border:0;border-radius:5px;padding:13px 18px;font-weight:800;font-size:13px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.reservation-btn-primary{background:#f4c400;color:#10243a}.reservation-btn-secondary{background:#003b70;color:#fff}
 .reservation-note{margin-top:16px;padding:13px;background:#fff8d8;border:1px solid #eadb83;border-radius:5px;font-size:12px;color:#4c4214}.reservation-consent{font-size:11px;color:#647587;display:flex;gap:8px;align-items:flex-start;margin-top:14px}.reservation-consent input{margin-top:2px}
-@media(max-width:700px){.reservation-grid{grid-template-columns:1fr}.reservation-field.full{grid-column:auto}.vehicle-extra.is-visible{grid-template-columns:1fr}.time-picker{grid-column:auto}.reservation-head{padding:20px}.reservation-body{padding:20px}.reservation-hero-btn{margin-left:0;margin-top:8px}.reservation-btn{width:100%}}
+.site-logo{width:205px;height:auto;display:block}.brand .brand-main,.brand .brand-sub{display:none}
+.gallery-section{background:#f4f7fa;border-top:1px solid #dce4eb}.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:26px}.gallery-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-template-rows:220px 220px;gap:14px}.gallery-item{position:relative;overflow:hidden;border-radius:8px;background:#dce4eb;min-height:0}.gallery-item:first-child{grid-row:1/3}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease}.gallery-item:hover img{transform:scale(1.035)}.gallery-caption{position:absolute;left:12px;bottom:12px;padding:7px 10px;background:rgba(0,25,48,.82);color:#fff;border-radius:4px;font-size:11px;font-weight:700}.gallery-credit{margin-top:14px;font-size:10px;color:#718092}.gallery-credit a{color:inherit}.gallery-logo{display:flex;align-items:center;justify-content:flex-end}
+@media(max-width:900px){.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 190px 190px}.gallery-item:first-child{grid-row:1/2;grid-column:1/-1}.gallery-logo{display:none}.gallery-head{align-items:start}}
+@media(max-width:700px){.reservation-grid{grid-template-columns:1fr}.reservation-field.full{grid-column:auto}.vehicle-extra.is-visible{grid-template-columns:1fr}.time-picker{grid-column:auto}.reservation-head{padding:20px}.reservation-body{padding:20px}.reservation-hero-btn{margin-left:0;margin-top:8px}.reservation-btn{width:100%}.site-logo{width:165px}.gallery-grid{display:grid;grid-template-columns:1fr;grid-template-rows:250px 190px 190px 190px 190px}.gallery-item:first-child{grid-column:auto}.gallery-caption{font-size:10px}}
 `;
 
 const style = document.createElement('style');
@@ -124,4 +127,39 @@ if (!document.getElementById('reservationOverlay')) {
   overlay.addEventListener('click', event => { if (event.target === overlay) closeReservation(); });
   document.addEventListener('keydown', event => { if (event.key === 'Escape') closeReservation(); });
   document.getElementById('reservationCall').addEventListener('click', () => { window.location.href = 'tel:+33251393068'; });
+}
+
+/* Identité visuelle + galerie photo */
+const brand = document.querySelector('.brand');
+if (brand && !brand.querySelector('.site-logo')) {
+  brand.innerHTML = '<img class="site-logo" src="logo.svg" alt="Garage Monnier — L’Épine, Île de Noirmoutier">';
+}
+
+if (!document.getElementById('photo-gallery')) {
+  const reservationSection = document.getElementById('reservation');
+  const gallery = document.createElement('section');
+  gallery.id = 'photo-gallery';
+  gallery.className = 'section gallery-section';
+  gallery.innerHTML = `
+    <div class="container">
+      <div class="gallery-head">
+        <div class="section-head" style="margin-bottom:0">
+          <p class="eyebrow blue">LE GARAGE & SON TERRITOIRE</p>
+          <h2>Un garage ancré au cœur de Noirmoutier.</h2>
+          <p>Le savoir-faire du Garage Monnier, dans un environnement qui fait partie de son identité.</p>
+        </div>
+        <div class="gallery-logo"><img src="logo.svg" alt="Garage Monnier" style="width:180px;height:auto"></div>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img src="https://www.mygarages.fr/s3/320/google/1259097.jpeg" alt="Garage des Églats — vue du garage" loading="lazy"><figcaption class="gallery-caption">Garage des Églats · L’Épine</figcaption></figure>
+        <figure class="gallery-item"><img src="https://www.mygarages.fr/s3/320/google/1259098.jpeg" alt="Garage des Églats — vue extérieure" loading="lazy"><figcaption class="gallery-caption">Garage Monnier</figcaption></figure>
+        <figure class="gallery-item"><img src="https://www.mygarages.fr/s3/320/google/1259099.jpeg" alt="Garage des Églats — atelier" loading="lazy"><figcaption class="gallery-caption">Atelier automobile</figcaption></figure>
+        <figure class="gallery-item"><img src="https://www.ile-noirmoutier.com/sites/default/files/2024-02/L%27Epine%20plage%20des%20Eloux%20-%20Quentin%20Boulegon.jpg" alt="Plage des Éloux à L’Épine" loading="lazy"><figcaption class="gallery-caption">L’Épine · Plage des Éloux</figcaption></figure>
+        <figure class="gallery-item"><img src="https://vendeevelo.vendee-tourisme.com/media/031-copyright-alamoureux-noirmoutier-maraissalants-1-31012028.jpg" alt="Marais salants de Noirmoutier" loading="lazy"><figcaption class="gallery-caption">Marais salants</figcaption></figure>
+        <figure class="gallery-item"><img src="https://img.sandayagroupe.eu/images/7/1/1/6/536117-1-fre-FR/145c96a160ba-plage_de_l-epine_adobestock_303641777.jpg" alt="Coucher de soleil sur la plage de L’Épine" loading="lazy"><figcaption class="gallery-caption">Côte de L’Épine</figcaption></figure>
+      </div>
+      <p class="gallery-credit">Photos du garage : images publiques référencées par MyGarages / Google. Photos de l’île : Office de Tourisme de l’Île de Noirmoutier et Vendée Tourisme.</p>
+    </div>`;
+  if (reservationSection) reservationSection.insertAdjacentElement('afterend', gallery);
+  else document.querySelector('main')?.appendChild(gallery);
 }
